@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pengembalian.`noPengembalian` AS pengembalian_noPengembalian,
+     pengembalian.`noPeminjaman` AS pengembalian_noPeminjaman,
+     pengembalian.`nis` AS pengembalian_nis,
+     pengembalian.`nama` AS pengembalian_nama,
+     pengembalian.`kelas` AS pengembalian_kelas,
+     pengembalian.`telepon` AS pengembalian_telepon,
+     pengembalian.`kode` AS pengembalian_kode,
+     pengembalian.`buku` AS pengembalian_buku,
+     pengembalian.`jenisBuku` AS pengembalian_jenisBuku,
+     pengembalian.`penerbit` AS pengembalian_penerbit,
+     pengembalian.`tanggalPengembalian` AS pengembalian_tanggalPengembalian
+FROM
+     `pengembalian` pengembalian]]>
+	</queryString>
+	<field name="pengembalian_noPengembalian" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_noPeminjaman" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_nis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_telepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_kode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_buku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_jenisBuku" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_penerbit" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pengembalian_tanggalPengembalian" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="117">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="78" width="802" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="181" y="33" width="510" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Bogor . KM.19, Kramat Jati]]></text>
+			</staticText>
+			<image>
+				<reportElement x="99" y="5" width="119" height="74"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\Rizki_\\Downloads\\favicon.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="186" y="5" width="510" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMK Budhiwarman 1 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="49" width="510" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta Timur, DKI Jakarta 13510]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="79" width="424" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Laporan Pengembalian Buku]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band height="43">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="85" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No.Kembali]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="85" y="0" width="50" height="43" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No.Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="135" y="0" width="50" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="185" y="0" width="104" height="43" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="289" y="0" width="57" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="346" y="0" width="80" height="43" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No. Telp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="426" y="0" width="63" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="489" y="0" width="107" height="43" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Judul Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="596" y="0" width="84" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Buku]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="680" y="0" width="64" height="43" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Penerbit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="744" y="0" width="58" height="43" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[TGL Kembali]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="51">
+			<textField>
+				<reportElement x="0" y="0" width="85" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_noPengembalian}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="0" width="50" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_noPeminjaman}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="135" y="0" width="50" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_nis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="0" width="104" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="0" width="57" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="0" width="80" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="63" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_kode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="489" y="0" width="107" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_buku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="596" y="0" width="84" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_jenisBuku}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="0" width="64" height="45"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pengembalian_penerbit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="744" y="0" width="58" height="22"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{pengembalian_tanggalPengembalian}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="177">
+			<staticText>
+				<reportElement x="560" y="27" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="575" y="7" width="169" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="518" y="7" width="100" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

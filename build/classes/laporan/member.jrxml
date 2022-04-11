@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="490" pageHeight="290" columnWidth="450" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<subDataset name="dataset1"/>
+	<parameter name="NIS" class="java.lang.String"/>
+	<parameter name="Nama" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from member where nis LIKE '%$P!{NIS}%']]>
+	</queryString>
+	<field name="nis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempatTanggalLahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenisKelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telpon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="62">
+			<staticText>
+				<reportElement x="69" y="0" width="371" height="34"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMK BUDHIWARMAN 1]]></text>
+			</staticText>
+			<image>
+				<reportElement x="14" y="0" width="73" height="58"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\Rizki_\\Downloads\\favicon.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="57" width="450" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="65" y="24" width="371" height="34"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Bogor . KM.19, Kramat Jati]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="36" width="371" height="21"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta Timur, DKI Jakarta 13510]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="181">
+			<staticText>
+				<reportElement x="159" y="29" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nis]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="29" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="49" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="49" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="69" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Lahir]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="69" width="53" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{tempatTanggalLahir}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="89" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="89" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{kelas}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="109" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="109" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{jenisKelamin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="129" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="129" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="149" width="139" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No.Telp]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="298" y="149" width="152" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{telpon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="142" y="9" width="172" height="20"/>
+				<textElement/>
+				<text><![CDATA[KARTU MEMBER PERPUSTAKAAN]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="41" width="102" height="123"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\Rizki_\\Downloads\\gambar-Wa-1.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
